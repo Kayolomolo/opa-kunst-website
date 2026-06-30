@@ -12,8 +12,9 @@ function bouwGalerij(containerId, lijst, map) {
     lijst.forEach(item => {
         const kaart = document.createElement("div");
         kaart.className = "kunstwerk";
+        const bron = item.bestand.startsWith("http") ? item.bestand : `foto's/${map}/${item.bestand}`;
         kaart.innerHTML = `
-            <img src="foto's/${map}/${item.bestand}" alt="${item.titel}">
+            <img src="${bron}" alt="${item.titel}">
             <div class="beschrijving">
                 <h3>${item.titel}</h3>
                 <p>${item.beschrijving}</p>

@@ -6,7 +6,10 @@ function leesMap(map) {
     return fs.readdirSync(map)
         .filter(bestand => bestand.endsWith(".json"))
         .map(bestand => JSON.parse(fs.readFileSync(path.join(map, bestand), "utf8")))
-        .map(item => ({ ...item, bestand: item.bestand.split("/").pop() }));
+        .map(item => ({
+            ...item,
+            bestand: item.bestand.startsWith("http") ? item.bestand : item.bestand.split("/").pop()
+        }));
 }
 
 const instellingen = JSON.parse(fs.readFileSync("content/instellingen.json", "utf8"));
