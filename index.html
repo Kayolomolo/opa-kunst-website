@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kunst van [Naam Opa]</title>
+<title>Kunst</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Kunst van [Naam Opa]</h1>
+    <h1 id="titel-header">Kunst</h1>
     <p>Schilderijen &amp; Beelden</p>
 </header>
 
@@ -26,61 +26,20 @@
     <section id="over">
         <h2>Over de kunstenaar</h2>
         <div class="over-de-kunstenaar">
-            <p>
-                Hier komt een korte omschrijving van de kunstenaar.
-                Bijvoorbeeld: sinds wanneer hij schildert en beeldhouwt,
-                wat zijn favoriete onderwerpen of stijl zijn, en wat
-                kunst voor hem betekent.
-            </p>
+            <p id="over-tekst"></p>
         </div>
     </section>
 
     <!-- ===== SCHILDERIJEN ===== -->
     <section id="schilderijen">
         <h2>Schilderijen</h2>
-        <div class="galerij">
-
-            <div class="kunstwerk">
-                <img src="foto's/schilderijen/schilderij1.jpg" alt="Schilderij 1">
-                <div class="beschrijving">
-                    <h3>Titel van het schilderij</h3>
-                    <p>Korte beschrijving van dit schilderij: bijvoorbeeld het onderwerp, de techniek of het jaar.</p>
-                </div>
-            </div>
-
-            <div class="kunstwerk">
-                <img src="foto's/schilderijen/schilderij2.jpg" alt="Schilderij 2">
-                <div class="beschrijving">
-                    <h3>Titel van het schilderij</h3>
-                    <p>Korte beschrijving van dit schilderij.</p>
-                </div>
-            </div>
-
-        </div>
+        <div class="galerij" id="galerij-schilderijen"></div>
     </section>
 
     <!-- ===== BEELDEN ===== -->
     <section id="beelden">
         <h2>Beelden</h2>
-        <div class="galerij">
-
-            <div class="kunstwerk">
-                <img src="foto's/beelden/beeld1.jpg" alt="Beeld 1">
-                <div class="beschrijving">
-                    <h3>Titel van het beeld</h3>
-                    <p>Korte beschrijving van dit beeld: bijvoorbeeld het materiaal of de inspiratie.</p>
-                </div>
-            </div>
-
-            <div class="kunstwerk">
-                <img src="foto's/beelden/beeld2.jpg" alt="Beeld 2">
-                <div class="beschrijving">
-                    <h3>Titel van het beeld</h3>
-                    <p>Korte beschrijving van dit beeld.</p>
-                </div>
-            </div>
-
-        </div>
+        <div class="galerij" id="galerij-beelden"></div>
     </section>
 
     <!-- ===== CONTACT ===== -->
@@ -88,15 +47,18 @@
         <h2>Contact</h2>
         <div class="contact">
             <p>Voor vragen of interesse in een schilderij of beeld:</p>
-            <a href="mailto:naam@email.nl">naam@email.nl</a>
+            <a id="contact-email" href="#"></a>
         </div>
     </section>
 
 </main>
 
 <footer>
-    &copy; 2026 [Naam Opa]
+    &copy; 2026 <span id="footer-naam"></span>
 </footer>
+
+<script src="gegevens.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
