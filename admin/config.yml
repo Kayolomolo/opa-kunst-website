@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Kayolomolo/opa-kunst-website
   branch: main
-  base_url: https://JOUW-VERCEL-ADRES.vercel.app
+  base_url: https://opa-kunst-oauth-proxy.vercel.app
   auth_endpoint: api/auth
 
 publish_mode: simple
