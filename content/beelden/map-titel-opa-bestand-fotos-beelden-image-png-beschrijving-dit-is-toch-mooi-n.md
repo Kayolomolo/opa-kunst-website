@@ -1,0 +1,6 @@
+---
+titel: Opa
+bestand: /foto's/beelden/image.png
+beschrijving: |
+  dit is toch mooi
+---
