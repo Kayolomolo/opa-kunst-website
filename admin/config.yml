@@ -26,7 +26,10 @@ collections:
     label: "Schilderijen"
     folder: "content/schilderijen"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
+    identifier_field: "titel"
     media_folder: "/foto's/schilderijen"
     public_folder: "/foto's/schilderijen"
     fields:
@@ -38,7 +41,10 @@ collections:
     label: "Beelden"
     folder: "content/beelden"
     create: true
+    extension: "json"
+    format: "json"
     slug: "{{slug}}"
+    identifier_field: "titel"
     media_folder: "/foto's/beelden"
     public_folder: "/foto's/beelden"
     fields:
