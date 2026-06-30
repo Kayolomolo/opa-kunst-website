@@ -1,0 +1,5 @@
+---
+titel: Prachtig
+bestand: https://cdn-thumbs.ohmyprints.net/1/af8f4fabeaa2db13bde483f8adeb7b71/817x600/thumbnail/fit.jpg
+beschrijving: "1991"
+---
