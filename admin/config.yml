@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: ""
+public_folder: ""
+
+collections:
+
+  - name: "instellingen"
+    label: "Instellingen (naam, over mij, e-mail)"
+    files:
+      - file: "content/instellingen.json"
+        label: "Instellingen"
+        name: "instellingen"
+        fields:
+          - { label: "Naam kunstenaar", name: "naamKunstenaar", widget: "string" }
+          - { label: "Over de kunstenaar", name: "overDeKunstenaar", widget: "text" }
+          - { label: "E-mailadres", name: "email", widget: "string" }
+
+  - name: "schilderijen"
+    label: "Schilderijen"
+    folder: "content/schilderijen"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/foto's/schilderijen"
+    public_folder: "/foto's/schilderijen"
+    fields:
+      - { label: "Titel", name: "titel", widget: "string" }
+      - { label: "Foto", name: "bestand", widget: "image" }
+      - { label: "Beschrijving", name: "beschrijving", widget: "text" }
+
+  - name: "beelden"
+    label: "Beelden"
+    folder: "content/beelden"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/foto's/beelden"
+    public_folder: "/foto's/beelden"
+    fields:
+      - { label: "Titel", name: "titel", widget: "string" }
+      - { label: "Foto", name: "bestand", widget: "image" }
+      - { label: "Beschrijving", name: "beschrijving", widget: "text" }

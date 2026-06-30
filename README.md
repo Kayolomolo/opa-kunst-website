@@ -1,48 +1,25 @@
-# Hoe pas ik de website aan?
+# Foto's en tekst aanpassen
 
-Alles kan via de GitHub-website in je browser. Je hoeft niets te installeren of te programmeren.
+Ga naar **jouw-website-adres/admin/** en log in. Daar krijg je een simpel formulier:
 
-De website zelf: **https://kayolomolo.github.io/opa-kunst-website/**
+- **Schilderijen** of **Beelden** → klik op **New** → foto slepen, titel en beschrijving typen → **Publish**.
+- **Instellingen** → naam, "over de kunstenaar"-tekst en e-mailadres aanpassen.
 
-## 1. Een foto toevoegen
+Na het publiceren duurt het ongeveer 1 minuut voordat de wijziging op de website te zien is.
 
-1. Ga naar de map [`foto's/schilderijen`](foto's/schilderijen) of [`foto's/beelden`](foto's/beelden), afhankelijk van wat je toevoegt.
-2. Klik rechtsboven op **Add file → Upload files**.
-3. Sleep je foto erin (of kies hem via "choose your files") en klik op **Commit changes**.
-4. Onthoud de bestandsnaam van de foto, die heb je zo nodig.
+Een kunstwerk verwijderen of aanpassen: open het item in dezelfde lijst, pas aan of klik op **Delete entry**.
 
-## 2. De foto zichtbaar maken op de website (titel + tekst toevoegen)
+---
 
-1. Open het bestand [`gegevens.js`](gegevens.js).
-2. Klik op het potloodje (✏️) rechtsboven om te bewerken.
-3. Zoek het kopje `schilderijen:` of `beelden:`.
-4. Kopieer een heel blokje zoals hieronder en plak het in de lijst (let op de komma's tussen blokjes):
+## Eenmalige installatie (voor de beheerder van de site)
 
-```
-{
-    titel: "Titel van het kunstwerk",
-    bestand: "naam-van-je-foto.jpg",
-    beschrijving: "Korte beschrijving van dit kunstwerk."
-}
-```
+Dit hoeft maar één keer:
 
-5. Vul je eigen titel, de bestandsnaam van de geüploade foto, en je beschrijving in.
-6. Scroll naar beneden en klik op **Commit changes**.
+1. Maak een gratis account op [netlify.com](https://www.netlify.com) en koppel deze GitHub-repo (`Kayolomolo/opa-kunst-website`) als nieuwe site.
+2. Ga in Netlify naar **Site configuration → Identity** en zet Identity aan.
+3. Ga naar **Identity → Registration** en zet op **Invite only**.
+4. Ga naar **Identity → Services → Git Gateway** en klik op **Enable Git Gateway**.
+5. Ga naar **Identity → Invite users** en nodig het e-mailadres van opa (of degene die foto's mag toevoegen) uit.
+6. Die persoon krijgt een mail, stelt een wachtwoord in, en kan daarna inloggen op **jouw-netlify-adres/admin/**.
 
-Na ongeveer 1 minuut staat de wijziging live op de website.
-
-## 3. "Over de kunstenaar" tekst aanpassen
-
-1. Open [`gegevens.js`](gegevens.js) en klik op het potloodje (✏️).
-2. Pas de tekst aan achter `overDeKunstenaar:`.
-3. Klik op **Commit changes**.
-
-## 4. Naam of e-mailadres aanpassen
-
-1. Open [`gegevens.js`](gegevens.js) en klik op het potloodje (✏️).
-2. Pas `naamKunstenaar:` of `email:` aan.
-3. Klik op **Commit changes**.
-
-## Een kunstwerk verwijderen
-
-Verwijder gewoon het hele blokje (van `{` tot en met `}`,) uit `gegevens.js` en klik op **Commit changes**.
+Vanaf dan werkt alles via het formulier hierboven — geen GitHub of code meer nodig.
