@@ -13,6 +13,11 @@ const gegevens = {
     ],
     "beelden": [
         {
+            "titel": "Opa",
+            "bestand": "image.png",
+            "beschrijving": "dit is toch mooi"
+        },
+        {
             "titel": "Titel van het beeld",
             "bestand": "beeld1.jpg",
             "beschrijving": "Korte beschrijving van dit beeld: bijvoorbeeld het materiaal of de inspiratie."
