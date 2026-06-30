@@ -6,6 +6,11 @@ const gegevens = {
     "email": "naam@email.nl",
     "schilderijen": [
         {
+            "titel": "Prachtig",
+            "bestand": "https://cdn-thumbs.ohmyprints.net/1/af8f4fabeaa2db13bde483f8adeb7b71/817x600/thumbnail/fit.jpg",
+            "beschrijving": "1991"
+        },
+        {
             "titel": "Titel van het schilderij",
             "bestand": "schilderij1.jpg",
             "beschrijving": "Korte beschrijving van dit schilderij: bijvoorbeeld het onderwerp, de techniek of het jaar."
