@@ -127,3 +127,18 @@ footer {
     color: #888;
     font-size: 0.9em;
 }
+
+.beheer-knop {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: #3a3a3a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+.beheer-knop:hover {
+    background: #555;
+}
